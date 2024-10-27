@@ -1,0 +1,54 @@
+.clear {
+  clear: both;
+}
+
+.checkBox {
+  display: block;
+  cursor: pointer;
+  min-width: 17px;
+  min-height: 17px;
+  max-width: 17px;
+  max-height: 17px;
+  border: 3px solid rgba(255, 255, 255, 0);
+  border-radius: 0.25rem;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 0px 0px 2px black;
+}
+
+.checkBox div {
+  min-width: 60px;
+  min-height: 60px;
+  max-width: 60px;
+  max-height: 60px;
+  background-color: black;
+  top: -52px;
+  left: -52px;
+  position: absolute;
+  border-radius: 0.2rem;
+  transform: rotateZ(45deg);
+  z-index: 100;
+}
+
+.checkBox input[type="checkbox"]:checked + div {
+  left: -10px;
+  top: -10px;
+}
+
+.checkBox input[type="checkbox"] {
+  position: absolute;
+  left: 50px;
+  visibility: hidden;
+}
+
+.transition {
+  transition: 300ms ease;
+}
+
+.dark .whiteShadow {
+  box-shadow: 0px 0px 0px 2px white !important;
+}
+
+.dark .checkBox div {
+  background: white;
+}

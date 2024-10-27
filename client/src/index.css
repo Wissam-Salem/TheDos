@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: Poppins;
+  src: url("/fonts/Poppins.ttf");
+}
+
+:root {
+  font-family: Poppins !important;
+  line-height: 1.5;
+  font-weight: 400;
+  min-height: 100dvh;
+  color-scheme: light dark;
+  color: black;
+  background-color: "#f5f5f5";
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  font-family: Poppins !important;
+}
+
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+}
